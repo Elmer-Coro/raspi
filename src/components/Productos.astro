@@ -1,0 +1,84 @@
+---
+const products = [
+  {
+    title: "Ramos Eternos",
+    subtitle: "Rosa",
+    price: "$$$",
+  },
+  {
+    title: "Cajas Sorpresa",
+    subtitle: "Temática",
+    price: "$$",
+  },
+  {
+    title: "Box Celebraciones",
+    subtitle: "Cumpleaños",
+    price: "$$",
+  },
+  {
+    title: "Detalles Creativos",
+    subtitle: "Especial",
+    price: "$$",
+  },
+  {
+    title: "Ramos Eternos",
+    subtitle: "Rosa",
+    price: "$$$",
+  },
+  {
+    title: "Cajas Sorpresa",
+    subtitle: "Temática",
+    price: "$$",
+  },
+  {
+    title: "Box Celebraciones",
+    subtitle: "Aniversario",
+    price: "$$",
+  },
+  {
+    title: "Detalles Creativos",
+    subtitle: "Único",
+    price: "$$",
+  },
+];
+---
+
+<section class="w-full bg-white py-16 px-4 text-center md:px-20">
+  <div class="max-w-7xl mx-auto mb-12">
+    <p class="text-sm font-medium text-gray-700 mb-2">Detalles</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-2">
+      Productos
+    </h2>
+    <p class="text-gray-600 text-base md:text-lg">
+      Descubre nuestros regalos únicos y personalizados.
+    </p>
+  </div>
+
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto mb-8"
+  >
+    {
+      products.map((product) => (
+        <div class="flex flex-col items-center border border-gray-200 p-4 rounded">
+          <div class="bg-gray-200 w-full aspect-[4/3] flex items-center justify-center mb-4">
+            <span class="text-gray-400 text-2xl">📷</span>
+          </div>
+          <h3 class="font-semibold">{product.title}</h3>
+          <p class="text-sm text-gray-500">{product.subtitle}</p>
+          <p class="text-lg my-2">{product.price}</p>
+          <button class="border border-black px-4 py-1 text-sm hover:bg-gray-100 transition">
+            Agregar al carrito
+          </button>
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="text-center">
+    <button
+      class="border border-black px-6 py-2 rounded hover:bg-gray-100 transition"
+    >
+      Ver todo
+    </button>
+  </div>
+</section>

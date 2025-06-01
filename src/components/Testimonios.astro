@@ -1,0 +1,73 @@
+---
+const testimonials = [
+  {
+    name: "Ana Pérez",
+    role: "Cliente Satisfecha",
+    quote: "¡Los detalles de Raspi hicieron que mi regalo fuera inolvidable!",
+    stars: 5,
+  },
+  {
+    name: "Luis Gómez",
+    role: "Empresario Local",
+    quote: "La atención y el detalle son excepcionales, ¡recomiendo Raspi!",
+    stars: 5,
+  },
+  {
+    name: "María López",
+    role: "Artista Creativa",
+    quote: "Cada regalo es una obra de arte personalizada.",
+    stars: 5,
+  },
+];
+---
+
+<section class="py-16 px-4 bg-white text-center md:px-20">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Testimonios de Clientes</h2>
+    <p class="text-gray-600 mb-10">
+      Nuestros clientes están encantados con nuestros productos.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    {
+      testimonials.map((testimonial) => (
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="flex justify-center mb-4 text-yellow-500">
+            {Array.from({ length: testimonial.stars }).map(() => (
+              <svg
+                class="w-5 h-5 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.564-.955L10 0l2.948 5.955 6.564.955-4.756 4.635 1.122 6.545z" />
+              </svg>
+            ))}
+          </div>
+          <p class="text-lg font-semibold mb-4">"{testimonial.quote}"</p>
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-gray-200 mb-2 flex items-center justify-center text-gray-500">
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  fill="gray"
+                />
+              </svg>
+            </div>
+            <p class="font-bold">{testimonial.name}</p>
+            <p class="text-sm text-gray-500">{testimonial.role}</p>
+            <img
+              src="https://assets-global.website-files.com/621f763e9bd2645ed78e5015/6238a6b2f688d5db502199bd_webflow-logo.svg"
+              alt="Webflow Logo"
+              class="mt-2 w-20"
+            />
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
