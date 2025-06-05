@@ -1,0 +1,88 @@
+<div class="carousel gap-4 w-full box-content">
+  <div
+    class="group grid grid-cols-2 md:grid-cols-4 gap-4 w-full box-content pt-4"
+  >
+    <div class="h-72 bg-gray-200 flex items-center justify-center">
+      <img
+        src="/public/img-1.jpeg"
+        alt=""
+      />
+    </div>
+    <div class="h-72 bg-gray-200 flex items-center justify-center">
+      <img
+        src="/public/img-2.jpeg"
+        alt=""
+      />
+    </div>
+    <div class="h-72 bg-gray-200 flex items-center justify-center">
+      <img
+        src="/public/img-3.jpeg"
+        alt=""
+      />
+    </div>
+    <div class="h-72 bg-gray-200 flex items-center justify-center">
+      <img
+        src="/public/img-4.jpeg"
+        alt=""
+      />
+    </div>
+  </div>
+
+  <div
+    aria-hidden
+    class="group grid grid-cols-2 md:grid-cols-4 gap-4 w-full box-content pt-4"
+  >
+    <div class="h-72 bg-gray-200 flex items-center justify-center">
+      <img
+        src="/public/img-5.jpeg"
+        alt=""
+      />
+    </div>
+    <div class="h-72 bg-gray-200 flex items-center justify-center">
+      <img
+        src="/public/img-6.jpeg"
+        alt=""
+      />
+    </div>
+    <div class="h-72 bg-gray-200 flex items-center justify-center">
+      <img
+        class="h-full"
+        src="/public/img-7.jpeg"
+        alt=""
+      />
+    </div>
+    <div class="h-72 bg-gray-200 flex items-center justify-center">
+      <img
+        src="/public/img-8.jpeg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .carousel {
+    overflow: hidden;
+    display: flex;
+    > * {
+      flex: 0 0 100%;
+    }
+    &:hover .group {
+      animation-play-state: paused;
+    }
+  }
+
+  .group {
+    will-change: transform;
+    animation: scrolling 10s linear infinite;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>

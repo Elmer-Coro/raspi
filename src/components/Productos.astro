@@ -1,41 +1,49 @@
 ---
 const products = [
   {
+    url: "/public/img-1.jpeg",
     title: "Ramos Eternos",
     subtitle: "Rosa",
     price: "$$$",
   },
   {
+    url: "/public/img-2.jpeg",
     title: "Cajas Sorpresa",
     subtitle: "Temática",
     price: "$$",
   },
   {
+    url: "/public/img-3.jpeg",
     title: "Box Celebraciones",
     subtitle: "Cumpleaños",
     price: "$$",
   },
   {
+    url: "/public/img-4.jpeg",
     title: "Detalles Creativos",
     subtitle: "Especial",
     price: "$$",
   },
   {
+    url: "/public/img-5.jpeg",
     title: "Ramos Eternos",
     subtitle: "Rosa",
     price: "$$$",
   },
   {
+    url: "/public/img-6.jpeg",
     title: "Cajas Sorpresa",
     subtitle: "Temática",
     price: "$$",
   },
   {
+    url: "/public/img-7.jpeg",
     title: "Box Celebraciones",
     subtitle: "Aniversario",
     price: "$$",
   },
   {
+    url: "/public/img-8.jpeg",
     title: "Detalles Creativos",
     subtitle: "Único",
     price: "$$",
@@ -61,7 +69,11 @@ const products = [
       products.map((product) => (
         <div class="flex flex-col items-center border border-gray-200 p-4 rounded">
           <div class="bg-gray-200 w-full aspect-[4/3] flex items-center justify-center mb-4">
-            <span class="text-gray-400 text-2xl">📷</span>
+            <img
+              class="h-[200px] w-full"
+              src={product.url}
+              alt=""
+            />
           </div>
           <h3 class="font-semibold">{product.title}</h3>
           <p class="text-sm text-gray-500">{product.subtitle}</p>

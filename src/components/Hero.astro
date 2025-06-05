@@ -1,5 +1,6 @@
 ---
-
+import CarouselUno from "./CarouselUno.astro";
+import CarouselDos from "./CarouselDos.astro";
 ---
 
 <section class="w-full bg-white py-16 text-center">
@@ -28,34 +29,8 @@
       </a>
     </div>
   </div>
-
-  <!-- Galería de imágenes (wireframe style) -->
-  <div
-    class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 w-full box-content py-16"
-  >
-    <div class="h-72 bg-gray-200 flex items-center justify-center">
-      <span class="text-gray-500">📷</span>
-    </div>
-    <div class="h-72 bg-gray-200 flex items-center justify-center">
-      <span class="text-gray-500">📷</span>
-    </div>
-    <div class="h-72 bg-gray-200 flex items-center justify-center">
-      <span class="text-gray-500">📷</span>
-    </div>
-    <div class="h-72 bg-gray-200 flex items-center justify-center">
-      <span class="text-gray-500">📷</span>
-    </div>
-    <div class="h-72 bg-gray-200 flex items-center justify-center">
-      <span class="text-gray-500">📷</span>
-    </div>
-    <div class="h-72 bg-gray-200 flex items-center justify-center">
-      <span class="text-gray-500">📷</span>
-    </div>
-    <div class="h-72 bg-gray-200 flex items-center justify-center">
-      <span class="text-gray-500">📷</span>
-    </div>
-    <div class="h-72 bg-gray-200 flex items-center justify-center">
-      <span class="text-gray-500">📷</span>
-    </div>
+  <div class="py-16">
+    <CarouselUno />
+    <CarouselDos />
   </div>
 </section>
