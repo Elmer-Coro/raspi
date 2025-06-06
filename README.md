@@ -1,48 +1,33 @@
-# Astro Starter Kit: Basics
+# 🌸 Raspi Detalles - Landing Page
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+**Detalles que perduran en el corazón.**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este proyecto es una **landing page** desarrollada con [Astro](https://astro.build/) para presentar **Raspi Detalles**, un emprendimiento dedicado a la creación de **regalos personalizados** que buscan emocionar y crear recuerdos inolvidables.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 💡 Propósito del Emprendimiento
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+En **Raspi** creemos que un regalo no es solo un objeto, sino un **mensaje**, una **emoción**, un **momento único**. Por eso cuidamos cada detalle, desde la selección de los productos hasta el empaque final.
 
-## 🚀 Project Structure
+Cada creación es **hecha a mano**, con dedicación y cariño. Nos encanta ayudarte a **sorprender, emocionar y celebrar**.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🎁 ¿Qué ofrecemos?
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- 🌹 Ramos de **rosas eternas**
+- 🎁 Cajas sorpresa **temáticas**
+- 🎉 Box para **celebraciones** (cumpleaños, aniversarios, fechas especiales)
+- ✨ Detalles creativos con un **toque especial y personalizado**
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🌐 Tecnologías utilizadas
 
-## 🧞 Commands
+- [Astro](https://astro.build/) – Framework para sitios estáticos
+- HTML / CSS / JS
+- Diseño responsive (adaptado a móviles y escritorio)
 
-All commands are run from the root of the project, from a terminal:
+## 🚀 Cómo usar este proyecto
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+1. Clona este repositorio:
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+   ```bash
+   git clone https://github.com/tu-usuario/raspi-detalles-landing.git
+   cd raspi-detalles-landing
+   ```
